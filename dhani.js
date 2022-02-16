@@ -116,18 +116,18 @@ module.exports = Dhani = async (Dhani, mek, _welkom) => {
 //══════════[ Mess Dll ]══════════//
 
 mess = {
-wait: '𝙋𝙍𝙊𝙎𝙀𝙎 ....',
-eror: '𝙈𝘼𝘼𝙁 𝙏𝙀𝙍𝙅𝘼𝘿𝙄 𝙆𝙀𝙎𝘼𝙇𝘼𝙃𝘼𝙉 !!',
-success: '𝙎𝙐𝙆𝙎𝙀𝙎 ✅️',
+wait: 'Sedang Di Proses....',
+eror: 'Maaf Terjadi Kesalahan !!',
+success: 'Sukses Jangan Lupa Ngocok🤣️',
 error: {
-stick: '𝙈𝘼𝘼𝙁 𝙄𝙏𝙐 𝘽𝙐𝙆𝘼𝙉 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 !!',
-Iv: '𝙇𝙄𝙉𝙆 𝙄𝙉𝙑𝘼𝙇𝙄𝘿 !!'
+stick: 'Itu bukan sticker coeg:v',
+Iv: 'Link gak valid !!'
 },
 only: {
-group: '𝙁𝙄𝙏𝙐𝙍 𝙃𝘼𝙉𝙔𝘼 𝘿𝘼𝙋𝘼𝙏 𝘿𝙄 𝙂𝙐𝙉𝘼𝙆𝘼𝙉 𝘿𝙄 𝘿𝘼𝙇𝘼𝙈 𝙂𝙍𝙐𝙋 !!',
-owner: '𝙁𝙄𝙏𝙐𝙍 𝙃𝘼𝙉𝙔𝘼 𝘿𝘼𝙋𝘼𝙏 𝘿𝙄 𝙂𝙐𝙉𝘼𝙆𝘼𝙉 𝙊𝙇𝙀𝙃 𝙊𝙒𝙉𝙀𝙍 𝘽𝙊𝙏 !!',
-admin: '𝙁𝙄𝙏𝙐𝙍 𝙃𝘼𝙉𝙔𝘼 𝘿𝘼𝙋𝘼𝙏 𝘿𝙄 𝙂𝙐𝙉𝘼𝙆𝘼𝙉 𝙊𝙇𝙀𝙃 𝘼𝘿𝙈𝙄𝙉 𝙂𝙍𝙐𝙋 !!',
-Badmin: '𝙅𝘼𝘿𝙄𝙆𝘼𝙉 𝘼𝘿𝙈𝙄𝙉 𝙅𝙄𝙆𝘼 𝙈𝘼𝙐 𝙂𝙐𝙉𝘼𝙆𝘼𝙉 𝙁𝙄𝙏𝙐𝙍  𝙄𝙏𝙐 !!'
+group: 'Khusus Dalam Group !!',
+owner: 'Khusus Owner Bot !!',
+admin: 'Khusus Admin Group !!',
+Badmin: 'Bot Bukan Admin ngap!!'
 }
 }
 
@@ -352,9 +352,9 @@ if (!isGroup) return
 if (!isAntiLink) return
 if (isGroupAdmins) return
 var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-fakeyt(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup chat, maaf kamu di kick dari grup`)
+fakeyt(` *「 LINK GROUP TERDETEKSI 」*\nLu kirimkan link grup, maaf bot bakal kick lu😁`)
 setTimeout(() => {
-Dhani.groupRemove(from, [kic]).catch((e) => { fakeyt(`BOT HARUS JADI ADMIN`) })
+Dhani.groupRemove(from, [kic]).catch((e) => { fakeyt(`Bot harus jadi admin😑`) })
 }, 0)
 }
 
@@ -362,9 +362,9 @@ if (budy.length > 3500) {
 if (!isGroup) return
 if (!isAntiVirtex) return
 if (isGroupAdmins) return
-fakeyt('Tandai telah dibaca\n'.repeat(300))
-fakeyt(`「 *VIRTEX DETECTOR* 」\n\nKamu mengirimkan virtex, maaf kamu di kick dari group`)
-console.log(color('[KICK]', 'red'), color('Received a virus text!', 'yellow'))
+fakeyt('Tandai telah dibaca bro\n'.repeat(300))
+fakeyt(`「 *VIRTEX TERDETEKSI* 」\n\nLu kirimkan virtex, maaf bot akan kick lu, mhehe`)
+console.log(color('[KICK]', 'red'), color('Ngirim virus text!', 'yellow'))
 Dhani.groupRemove(from, [sender])
 }     
 
@@ -380,22 +380,22 @@ Dhani.updatePresence(from, Presence.recording)
 
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
         if(time2 < "23:59:00"){
-        var ucapanWaktu = 'Selamat Malam'
+        var ucapanWaktu = 'Selamat Malam🌃'
 }
         if(time2 < "19:00:00"){
-        var ucapanWaktu = 'Selamat Petang'
+        var ucapanWaktu = 'Selamat Petang🌇'
 }
         if(time2 < "18:00:00"){
-        var ucapanWaktu = 'Selamat Sore'
+        var ucapanWaktu = 'Selamat Sore🌇'
 }
         if(time2 < "15:00:00"){
-        var ucapanWaktu = 'Selamat Siang️'
+        var ucapanWaktu = 'Selamat Siang🌄️'
 }
         if(time2 < "11:00:00"){
-        var ucapanWaktu = 'Selamat Pagi'
+        var ucapanWaktu = 'Selamat Pagi🌅'
 }
         if(time2 < "05:00:00"){
-        var ucapanWaktu = 'Selamat Malam'
+        var ucapanWaktu = 'Selamat Malam🌃'
 }
 
 		colors = ['red', 'white', 'black', 'blue', 'yellow', 'green']
@@ -416,8 +416,11 @@ case 'menu':
 menu =
 `*${ucapanWaktu} @${sender.split('@')[0]}*
 
-
-*「 𝗚𝗥𝗨𝗣 𝗠𝗘𝗡𝗨 」*
+ ⊛ BOT SIMPLE JAGA GRUP
+ ⊛ Creator : Hanif
+ ⊛ Pesan : Bot di buat oleh hanif, base by Dhani 😱
+ 
+*「 KHUSUS GRUP 」*
 
 ⊛ ${prefix}antilink *on / off*
 ⊛ ${prefix}antivirtex *on / off*
@@ -436,317 +439,13 @@ menu =
 ⊛ ${prefix}listonline
 ⊛ ${prefix}resetlinkgrup
 
-
-*「 𝗦𝗧𝗢𝗥𝗘 𝗠𝗘𝗡𝗨 」*
-
-⊛ ${prefix}proses
-⊛ ${prefix}done
-⊛ ${prefix}store
-⊛ ${prefix}masukandata
-⊛ ${prefix}payment
-⊛ ${prefix}dmff
-⊛ ${prefix}dmml
-⊛ ${prefix}ucpubg
-⊛ ${prefix}cod
-⊛ ${prefix}sausageman
-⊛ ${prefix}jasher
-
-
-*「 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 」*
+*「 KHUSUS OWNER 」*
 
 ⊛ ${prefix}owner
 ⊛ ${prefix}bc *Teks*`
 teks =
 `「 ${botname} 」\n*${tanggal}*`
-Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}store`, buttonText: { displayText: 'sᴛᴏʀᴇ' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
-break
-
-//══════════[ STORE ]══════════//
-
-case 'store':
-               list = []
-               listmenu = [`masukandata`,`dmff`,`dmml`,`ucpubg`,`cod`,`sausageman`,`jasher`,`payment`]
-               listmenuu = [`ᴍᴀsᴜᴋᴀɴ ᴅᴀᴛᴀ`,`ᴅɪᴀᴍᴏɴᴅ ғʀᴇᴇ ғɪʀᴇ`,`ᴅɪᴀᴍᴏɴᴅ ᴍᴏʙɪʟᴇ ʟᴇɢᴇɴᴅ`,`ᴜᴄ ᴘᴜʙɢ`,`ᴄᴀʟʟ ᴏғ ᴅᴜᴛʏ ᴍᴏʙɪʟᴇ`,`sᴀᴜsᴀɢᴇ ᴍᴀɴ`,`ᴊᴀsᴀ sʜᴀʀᴇ`,`ᴘᴀʏᴍᴇɴᴛ`]
-               nombor = 1
-               startnum = 0
-               for (let x of listmenu) {
-               const yy = {title: 'Silakan Di Pilih',
-                    rows: [
-                       {
-                        title: `${listmenuu[startnum++]}`,
-                        description: ``,
-                        rowId: `${prefix}${x}`
-                      }
-                    ]
-                   }
-                        list.push(yy)
-           }
-               listmsg(from, `${ucapanWaktu}`, `Hai kak ${pushname}, Mau Buy Kah ?`, list)
-               break
-case 'proses':
-if (!isGroup) return reply(mess.only.group)
-if (!isGroupAdmins) return reply(mess.only.admin)
-menu = `_Orderan Sedang Di Proses Silakan Di Tunggu_
-
-*⏰ Jam ⵓ* _${time} WIB_
-*📅 Tanggal ⵓ* _${tanggal}_
-
-_Pesanan Sedang Di Proses Harap Di Tunggu Ya Kak !!_`
-reply(menu)
-break
-case 'done':
-if (!isGroup) return reply(mess.only.group)
-if (!isGroupAdmins) return reply(mess.only.admin)
-menu =`_Done Kak Orderan Telah Di Terima_
-
-*⏰ Jam ⵓ* _${time} WIB_
-*📅 Tanggal ⵓ* _${tanggal}_
-
-
-_All Trx No Reff Jadi Barang Tidak Bisa  Di Kembalikan Karna Sudah Bilang Done !!_`
-reply(menu)
-break
-
-case 'masukandata':
-menu =`*${ucapanWaktu} @${sender.split('@')[0]}*
-*Sebelum lanjut, Mohon diisi dulu !!*
-
-
-*𖣘 ɴᴀᴍᴀ :*
-*𖣘 ɪᴅ :*
-*𖣘 ɴᴏᴍɪɴᴀʟ :*
-*𖣘 ʜᴀʀɢᴀ ᴅɪᴀᴍᴏɴᴅ :*`
-teks =`*Pastikan Format Benar !!*
-*Jika Salah Isi Formot Maka Diamond Gak Masuk*
-*Kami tidak akan bertanggung jawab !!*
-*Jika Sudah Selesai Isi Format Harap Kirim Ke Owner !!*
-*Terima kasih*
-
-${tanggal}`
-Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}payment`, buttonText: { displayText: 'ʙᴀʏᴀʀ' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
-break
-
-case 'dmff':
-case 'diamondfreefire':
-gambar = fs.readFileSync('./media/qr.jpg')
-menunya = `*「 DIAMOND FREEFIRE 」*
-
-• *12 DIAMOND = 2.000*
-• *20 DIAMOND = 3.000*
-• *50 DIAMOND = 7.000*
-• *70 DIAMOND = 10.000*
-• *100 DIAMOND = 14.000*
-• *140 DIAMOND = 19.000*
-• *150 DIAMOND = 20.000*
-• *210 DIAMOND = 28.000*
-• *280 DIAMOND = 37.000*
-• *355 DIAMOND = 47.000*
-• *425 DIAMOND = 56.000*
-• *500 DIAMOND = 65.000*
-• *635 DIAMOND = 83.000*
-• *720 DIAMOND = 92.000*
-• *1.075 DIAMOND = 138.000*
-• *2.000 DIAMOND = 251.000*
-• *3.440 DIAMOND = 434.000*
-• *4.000 DIAMOND = 500.000*
-• *6.000 DIAMOND = 750.000*
-• *7.290 DIAMOND = 918.000*
-• *8.010 DIAMOND = 1.167.600*
-
-*「 Member Ship 」*
-
-• *MM = Rp 29.000*
-• *MB = Rp 140.000*`
-teks =
-`「 ${botname} 」\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'ᴘᴀʏᴍᴇɴᴛ' }, type: 1 },
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
-        ]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'dmml':
-case 'diamondmobilelegend':
-gambar = fs.readFileSync('./media/qr.jpg')
-menunya = `*「 DIAMOND MOBA 」*
-
-• *5 DIAMOND = 2.000*
-• *12 DIAMOND = 4.000*
-• *19 DIAMOND = 6.000*
-• *28 DIAMOND = 9.000*
-• *36 DIAMOND = 11.000*
-• *86 DIAMOND = 21.000*
-• *172 DIAMOND = 41.000*
-• *257 DIAMOND = 61.000*
-• *343 DIAMOND = 81.000*
-• *429 DIAMOND = 102.000*
-• *514 DIAMOND = 122.000*
-• *600 DIAMOND = 142.000*
-• *706 DIAMOND = 163.000*
-• *878 DIAMOND = 204.000*
-• *963 DIAMOND = 224.000*
-• *1.049 DIAMOND = 244.000*
-
-*「 Starlight Member 」*
-
-• *SM = 134.000*
-• *TP = 134.000*
-• *SMP = 305.000*`
-teks =
-`「 ${botname} 」\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'ᴘᴀʏᴍᴇɴᴛ' }, type: 1 },
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
-        ]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'ucpubg':
-gambar = fs.readFileSync('./media/qr.jpg')
-menunya = `*「 UC PUBG 」*
-
-• *35 UC = 8.000*
-• *50 UC = 4.000*
-• *70 UC = 6.000*
-• *150 UC = 9.000*
-• *250 UC = 11.000*
-• *500 UC = 21.000*
-• *700 UC = 41.000*
-• *1.000 UC = 61.000*
-• *1.250 UC = 81.000*
-• *1.750 UC = 102.000*
-• *2.500 UC = 122.000*`
-teks =
-`「 ${botname} 」\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'ᴘᴀʏᴍᴇɴᴛ' }, type: 1 },
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
-        ]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'callofdutymobile':
-case 'codm':
-case 'cod':
-gambar = fs.readFileSync('./media/qr.jpg')
-menunya = `*「 Call of Duty Mobile 」*
-
-• *62 CP = 10.000*
-• *127 CP = 20.000*
-• *317 CP = 49.000*
-• *634 CP = 97.000*
-• *1.373 CP = 193.000*
-• *2.059 CP = 290.000*
-• *3.564 CP = 483.000*
-• *7.656 UC = 964.000*`
-teks =
-`「 ${botname} 」\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'ᴘᴀʏᴍᴇɴᴛ' }, type: 1 },
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
-        ]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'sausageman':
-gambar = fs.readFileSync('./media/qr.jpg')
-menunya = `*「 SAUSAGE MAN 」*
-
-• *60 Candy = 8.000*
-• *180 Candy = 4.000*
-• *300 + 16 Candy = 6.000*
-• *680 + 38 Candy = 9.000*
-• *1.280 + 88 Candy = 11.000*
-• *1.980 + 138 Candy = 21.000*`
-teks =
-`「 ${botname} 」\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'ᴘᴀʏᴍᴇɴᴛ' }, type: 1 },
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
-        ]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'jasasher':
-case 'jasher':
-gambar = fs.readFileSync('./media/qr.jpg')
-menunya = `🇯‌‌🇦‌‌🇸‌‌🇦‌•‌🇸‌‌🇭‌‌🇦‌‌🇷‌‌🇪‌
-
-┏━━━━━━━━━━━━━━━━━━
-┃  *⎙ MENYEDIAKAN ⎙*
-┃     *JASA SHARE*
-┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-┃      *50 GRUP*
-┃• *1X SHARE : 300P*
-┃• *3X SHARE : 700P*
-┃• *4X SHARE : 900P*
-┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-┃      *100 GRUP*
-┃• *1X SHARE : 1000*
-┃• *2X SHARE : 1.400*
-┃• *3X SHARE : 1.900*
-┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-┃      *200 GRUP*
-┃• *1X SHARE : 2.200*
-┃• *2X SHARE : 2.300*
-┃• *3X SHARE : 2.500*
-┃• *5X SHARE : 2.700*
-┃▰▰▰▰▰▰▰▰▰▰▰▰▰▰
-┃     *300 GRUP*
-┃• *1X SHARE : 2.500*
-┃• *2X SHARE : 2.900*
-┃• *3X SHARE : 3.100*
-┗━━━━━━━━━━━━━━━━━━━
-
-
-*DIJAMIN NGALIRRRR POLL🤖*
-🗣️ : *ADA TESTI GK BG*
-👤 : *TESTI JIBUN POKOKNYA  DIJAMIN NGALIRR*🤑
-*▰▰▰▰▰▰▰▰▰▰▰▰▰*
-
-
-*⎙ PAKET PERJAM ⎙*
-*[ 2JAM 6K 200GRUB ]*
-*[ 3JAM 13K 330 GRUB ]*
-*[ 5JAM 20K 450 GRUB ]*
-
-*JEDA UNTUK PERJAM HANYA 5MENIT 4×SHARE UNTUK 1JAM*
-
-
-*PAKET PERHARI*
-
-*1HARI = 10K*
-*2HARI = 18K*
-*3HARI = 25K*
-*4HARI = 34K*
-*5HARI = 40K*`
-teks =
-`「 ${botname} 」\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'ᴘᴀʏᴍᴇɴᴛ' }, type: 1 },
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
-        ]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'bayar':
-case 'payment':
-gambar = fs.readFileSync('./media/qr.jpg')
-menunya = `*「 PAYMENT 」*
-
-• *Gopay : ${gopay}*
-• *Dana : ${dana}*
-• *Ovo : ${ovo}*
-• *Pulsa : ${pulsa}*
-• *Scan Qris Di Atas !!*`
-teks =
-`「 ${botname} 」\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 },
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
-        ]
-        sendButImage(from, menunya, teks, gambar, but)
+Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}menu`, buttonText: { displayText: 'MENU' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
 break
 
 //══════════[ Fitur Owner ]══════════//
@@ -765,7 +464,7 @@ vcard2 = 'BEGIN:VCARD\n'
 Dhani.sendMessage(from, {displayName: `Ownernya ${botname}`, vcard: vcard2}, contact, 
 { quoted: ftrol, 
 })
-fakeyt(`_Tuh Kak Ownerku_`)
+fakeyt(`_Tuh Kak Owner Ganteng:v_`)
 break
 case 'bc':
              if (!isOwner && !mek.key.fromMe) return  reply(mess.only.owner)
@@ -777,15 +476,15 @@ case 'bc':
              for (let _ of anu100) {
              Dhani.sendMessage(_.jid, bc100, image, {quoted: ftrol, caption: `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`})
 }
-             fakeyt('Suksess broadcast')
+             fakeyt('Suksess broadcast bro')
              } else {
              for (let _ of anu100) {
              Dhani.sendMessage(_.jid, 
-			{"contentText": `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`,
+			{"contentText": `*「 PESAN SIARAN HANIF BOT 」*\n\n${body.slice(4)}`,
 			"footerText": `${tanggal}`,
 			"buttons": [
 			{"buttonId": `${prefix}menu`,
-			"buttonText": {"displayText": "ᴍᴇɴᴜ"
+			"buttonText": {"displayText": "ᴏᴡɴᴇʀ"
 			},"type": "RESPONSE"}
 			], "headerType": 'LOCATION',
 			locationMessage: { degreesLatitude: '',
@@ -793,7 +492,7 @@ case 'bc':
 			jpegThumbnail: fakeimage,
 			}}, MessageType.buttonsMessage )
 }
-             fakeyt('Suksess broadcast')
+             fakeyt('Suksess broadcast bro')
 }
              break
 
@@ -804,12 +503,12 @@ if (!isGroup) return fakeyt(mess.only.group)
 if (!isGroupAdmins && !mek.key.fromMe) return fakeyt(mess.only.admin)
 if (args.length < 1) return fakeyt(`Ketik :\n${prefix}welcome on untuk mengaktifkan\n${prefix}welcome off untuk menonaktifkan`)
 if ((args[0]) === 'on') {
-if (isWelkom) return fakeyt('*welcome sudah aktif !!*')
+if (isWelkom) return fakeyt('*welcome sudah aktif coeg !!*')
 _welkom.push(from)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
 fakeyt(`\`\`\`Sukses ✅, Mengaktifkan fitur welcome di group\`\`\` *${groupMetadata.subject}*`)
 } else if ((args[0]) === 'off') {
-if (!isWelkom) return fakeyt('*welcome sudah off sebelumnya !!*')
+if (!isWelkom) return fakeyt('*welcome udah mati sebelumnya !!*')
 _welkom.splice(from, 1)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
 fakeyt(`\`\`\`Sukses ✅, Menonaktifkan fitur welcome di group\`\`\` *${groupMetadata.subject}*`)
@@ -823,7 +522,7 @@ if (!isGroupAdmins && !mek.key.fromMe) return fakeyt(mess.only.admin)
 if (!isBotGroupAdmins) return fakeyt(mess.only.Badmin)
 if (!q) return fakeyt(`Pilih on atau off`)
 if (args[0].toLowerCase() === 'on'){
-if (isAntiLink) return fakeyt(`Udah aktif`)
+if (isAntiLink) return fakeyt(`Udah aktif bro`)
 _antilink.push(from)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(_antilink))
 fakeyt(`\`\`\`Sukses ✅, Mengaktifkan fitur antilink di grup\`\`\` *${groupMetadata.subject}*`)
@@ -842,7 +541,7 @@ if (!isGroupAdmins && !mek.key.fromMe) return fakeyt(mess.only.admin)
 if (!isBotGroupAdmins) return fakeyt(mess.only.Badmin)
 if (!q) return fakeyt(`Pilih on atau off`)
 if (args[0].toLowerCase() === 'on'){
-if (isAntiVirtex) return fakeyt(`Udah aktif`)
+if (isAntiVirtex) return fakeyt(`Udah aktif bro`)
 _antivirtex.push(from)
 fs.writeFileSync('./database/antivirtex.json', JSON.stringify(_antivirtex))
 fakeyt(`\`\`\`Sukses ✅, Mengaktifkan fitur antivirtex di grup\`\`\` *${groupMetadata.subject}*`)
@@ -864,7 +563,7 @@ if (args[0] === 'buka') {
 fakeyt(`*Berhasil Membuka Grup ${groupMetadata.subject}*`)
 Dhani.groupSettingChange(from, GroupSettingChange.messageSend, false)
 } else if (args[0] === 'tutup') {
-fakeyt(`*Berhasil Memtutup Grup ${groupMetadata.subject}*`)
+fakeyt(`*Berhasil Menutup Grup ${groupMetadata.subject}*`)
 Dhani.groupSettingChange(from, GroupSettingChange.messageSend, true)
 }
 break
@@ -881,10 +580,10 @@ case 'promote' :
 if (!isGroup) return fakeyt(mess.only.group)
 if (!isGroupAdmins && !mek.key.fromMe) return fakeyt(mess.only.admin)
 if (!isBotGroupAdmins) return fakeyt(mess.only.Badmin)
-if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return fakeyt('Tag target yang ingin di jadi admin!')
+if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return fakeyt('Tag target yang ingin di jadi admin bro!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = 'Perintah di terima, anda menjdi admin :\n'
+teks = 'Perintah di terima, lu jadi admin :\n'
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
@@ -899,10 +598,10 @@ case 'demote' :
 if (!isGroup) return fakeyt(mess.only.group)
 if (!isGroupAdmins && !mek.key.fromMe) return fakeyt(mess.only.admin)
 if (!isBotGroupAdmins) return fakeyt(mess.only.Badmin)
-if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return fakeyt('Tag target yang ingin di tidak jadi admin!')
+if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return fakeyt('Tag target yang ingin di tidak jadi admin bro!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = 'Perintah di terima, anda tidak menjadi admin :\n'
+teks = 'Perintah di terima, lu gak jadi admin :\n'
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
@@ -918,7 +617,7 @@ if (!isGroup) return fakeyt(mess.only.group)
 if (!isGroupAdmins && !mek.key.fromMe) return fakeyt(mess.only.admin)
 if (!isBotGroupAdmins) return fakeyt(mess.only.Badmin)
 if (args.length < 1) return fakeyt('Yang mau di add siapa??')
-if (args[0].startsWith('08')) return fakeyt('Gunakan kode negara Gan')
+if (args[0].startsWith('08')) return fakeyt('Gunakan kode negara bro')
 try {
 num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 Dhani.groupAdd(from, [num])
@@ -935,7 +634,7 @@ if (
 mek.message.extendedTextMessage === undefined ||
 mek.message.extendedTextMessage === null
 )
-return fakeyt("Tag target yang ingin di kick!");
+return fakeyt("Tag target yang ingin lu kick!");
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid;
 if (mentioned.length > 1) {
 Dhani.groupRemove(from, mentioned);
@@ -984,8 +683,8 @@ if (isQuotedImage) {
 let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 let media = await Dhani.downloadMediaMessage(encmedia)
 Dhani.updateProfilePicture(from, media)
-.then((res) => fakeyt(jsonformat(res)))
-.catch((err) => fakeyt(jsonformat(err)))
+.then((res) => reply(jsonformat(res)))
+.catch((err) => reply(jsonformat(err)))
 } else {
 fakeyt(`Kirim atau tag gambar dengan caption ${prefix}setppgrup`)
 }
@@ -1033,7 +732,7 @@ if (!isGroup) return fakeyt(mess.only.group)
 try {
 let ido = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
 let online = [...Object.keys(Dhani.chats.get(ido).presences), Dhani.user.jid]
-Dhani.sendMessage(from, 'List Online:\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join `\n`, text, { quoted: fkon, contextInfo: { mentionedJid: online }})
+Dhani.sendMessage(from, 'List Online:\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join `\n`, text, { quoted: ftrol, contextInfo: { mentionedJid: online }})
 } catch (e) {
 fakeyt(`${e}`)
 }
